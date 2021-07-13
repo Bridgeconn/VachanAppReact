@@ -40,6 +40,7 @@ class DrawerScreen extends Component {
       { icon: 'videocam', pressIcon: 'Video', text: 'Video' },
       { icon: 'book', pressIcon: 'Dictionary', text: 'Dictionary' },
       { icon: 'image', pressIcon: 'Infographics', text: 'Infographics' },
+      { icon: 'receipt', pressIcon: 'OBS', text: 'Bible Story' },
       { icon: 'history', pressIcon: 'History', text: 'History' },
       { icon: 'search', pressIcon: 'Search', text: 'Search' },
       { icon: 'settings', pressIcon: 'Settings', text: 'Settings' },
@@ -86,9 +87,9 @@ class DrawerScreen extends Component {
             )
           }
            {/*for appstore app*/}
-        <Text style={this.styles.versionText}>APP VERSION {this.state.currentVersion}</Text>
+        {/* <Text style={this.styles.versionText}>APP VERSION {this.state.currentVersion}</Text> */}
         { /*//for tesing */}
-        {/* <Text style={this.styles.versionText}>APP VERSION 1.2.1-alpha.1</Text> */}
+        <Text style={this.styles.versionText}>APP VERSION 1.2.1-alpha.1</Text>
         </ScrollView>
       </View>
     );

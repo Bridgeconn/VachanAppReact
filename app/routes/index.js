@@ -32,6 +32,7 @@ import PlayVideo from '../screens/Video/PlayVideo'
 import Help from '../screens/Help'
 import Feedback from '../screens/Help/Feedback'
 import Hints from '../screens/Help/Hints'
+import OBS from '../screens/StudyHelp/OBS/'
 
 
 const NavStack = createStackNavigator(
@@ -85,6 +86,12 @@ const NavStack = createStackNavigator(
     Reset: {
       screen: Reset,
       navigationOptions: { headerTitle: "Forgot Passsword ?" }
+    },
+    OBS: {
+      screen: OBS,
+      navigationOptions: () => ({
+        header: null
+      })
     },
     ProfilePage: {
       screen: ProfilePage,
