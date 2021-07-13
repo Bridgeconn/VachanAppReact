@@ -6,7 +6,7 @@ import {
 import SelectionGrid from '../../../components/SelectionGrid/';
 import { numberSelection } from './styles.js';
 import { connect } from 'react-redux'
-import Icon from 'react-native-vector-icons/MaterialIcons'
+import {Icon} from 'native-base'
 
 class ChapterSelection extends Component {
 
@@ -33,7 +33,7 @@ class ChapterSelection extends Component {
           numbers={this.state.chapterData}
           heighlightedNumber={this.props.screenProps.selectedChapterNumber}
         />
-        <Icon name="check-circle" color='rgba(62, 64, 149, 0.8)' onPress={() => this.props.screenProps.updateSelectedChapter(this.props.screenProps.selectedChapterNumber, this.props.screenProps.selectedChapterIndex)} size={64} style={{ position: 'absolute', bottom: 0, right: 0, paddingRight: 20,paddingBottom:10 }} />
+        <Icon type="AntDesign" name="back" onPress={() => this.props.screenProps.updateSelectedChapter(this.props.screenProps.selectedChapterNumber, this.props.screenProps.selectedChapterIndex)} size={64} style={{ position: 'absolute', bottom: 0, right: 0, paddingRight: 20,paddingBottom:10,color:'rgba(62, 64, 149, 0.8)',fontSize:40 }} />
       </View>
 
     )

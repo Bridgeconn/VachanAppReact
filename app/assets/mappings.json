@@ -1,397 +1,397 @@
 {
   "id_name_map": {
     "GEN": {
-    "book_name": {"english":"Genesis "},
+    "book_name": "Genesis",
       "section": "OT",
       "total_chapters":50,
       "number": 1
     },
     "EXO": {
-    "book_name": {"english":"Exodus"},
+    "book_name": "Exodus",
       "section": "OT",
       "total_chapters":40,
       "number": 2
     },
     "LEV": {
-    "book_name": {"english":"Leviticus"},
+    "book_name": "Leviticus",
       "section": "OT",
       "total_chapters":27,
       "number": 3
     },
     "NUM": {
-    "book_name": {"english":"Numbers"},
+    "book_name": "Numbers",
       "section": "OT",
       "total_chapters":36,
       "number": 4
     },
     "DEU": {
-    "book_name": {"english":"Deuteronomy"},
+    "book_name": "Deuteronomy",
       "section": "OT",
       "total_chapters":34,
       "number": 5
     },
     "JOS": {
-    "book_name": {"english":"Joshua"},
+    "book_name": "Joshua",
       "section": "OT",
       "total_chapters":24,
       "number": 6
     },
     "JDG": {
-    "book_name": {"english":"Judges"},
+    "book_name": "Judges",
       "section": "OT",
       "total_chapters":21,
       "number": 7
     },
     "RUT": {
-    "book_name": {"english":"Ruth"},
+    "book_name": "Ruth",
       "section": "OT",
       "total_chapters":4,
       "number": 8
     },
     "1SA": {
-    "book_name": {"english":"1 Samuel"},
+    "book_name": "1 Samuel",
       "section": "OT",
       "total_chapters":31,
       "number": 9
     },
     "2SA": {
-    "book_name": {"english":"2 Samuel"},
+    "book_name": "2 Samuel",
       "section": "OT",
       "total_chapters":24,
       "number": 10
     },
     "1KI": {
-    "book_name": {"english":"1 Kings"},
+    "book_name": "1 Kings",
       "section": "OT",
       "total_chapters":22,
       "number": 11
     },
     "2KI": {
-    "book_name": {"english":"2 Kings"},
+    "book_name": "2 Kings",
       "section": "OT",
       "total_chapters":25,
       "number": 12
     },
     "1CH": {
-    "book_name": {"english":"1 Chronicles"},
+    "book_name": "1 Chronicles",
       "section": "OT",
       "total_chapters":29,
       "number": 13
     },
     "2CH": {
-    "book_name": {"english":"2 Chronicles"},
+    "book_name": "2 Chronicles",
       "section": "OT",
       "total_chapters":36,
       "number": 14
     },
     "EZR": {
-    "book_name": {"english":"Ezra"},
+    "book_name": "Ezra",
       "section": "OT",
       "total_chapters":10,
       "number": 15
     },
     "NEH": {
-    "book_name": {"english":"Nehemiah"},
+    "book_name":"Nehemiah",
       "section": "OT",
       "total_chapters":13,
       "number": 16
     },
     "EST": {
-    "book_name": {"english":"Esther"},
+    "book_name": "Esther",
       "section": "OT",
       "total_chapters":10,
       "number": 17
     },
     "JOB": {
-    "book_name": {"english":"Job"},
+    "book_name": "Job",
       "section": "OT",
       "total_chapters":42,
       "number": 18
     },
     "PSA": {
-    "book_name": {"english":"Psalms"},
+    "book_name": "Psalms",
       "section": "OT",
       "total_chapters":150,
       "number": 19
     },
     "PRO": {
-    "book_name": {"english":"Proverbs"},
+    "book_name": "Proverbs",
       "section": "OT",
       "total_chapters":31,
       "number": 20
     },
     "ECC": {
-    "book_name": {"english":"Ecclesiastes"},
+    "book_name": "Ecclesiastes",
       "section": "OT",
       "total_chapters":12,
       "number": 21
     },
     "SNG": {
-    "book_name": {"english":"Song of Songs"},
+    "book_name": "Song of Songs",
       "section": "OT",
       "total_chapters":8,
       "number": 22
     },
     "ISA": {
-    "book_name": {"english":"Isaiah"},
+    "book_name": "Isaiah",
       "section": "OT",
       "total_chapters":66,
       "number": 23
     },
     "JER": {
-    "book_name": {"english":"Jeremiah"},
+    "book_name": "Jeremiah",
       "section": "OT",
       "total_chapters":52,
       "number": 24
     },
     "LAM": {
-    "book_name": {"english":"Lamentations"},
+    "book_name": "Lamentations",
       "section": "OT",
       "total_chapters":5,
       "number": 25
     },
     "EZK": {
-    "book_name": {"english":"Ezekiel"},
+    "book_name": "Ezekiel",
       "section": "OT",
       "total_chapters":48,
       "number": 26
     },
     "DAN": {
-    "book_name": {"english":"Daniel"},
+    "book_name": "Daniel",
       "section": "OT",
       "total_chapters":12,
       "number": 27
     },
     "HOS": {
-    "book_name": {"english":"Hosea"},
+    "book_name": "Hosea",
       "section": "OT",
       "total_chapters":14,
       "number": 28
     },
     "JOL": {
-    "book_name": {"english":"Joel"},
+    "book_name": "Joel",
       "section": "OT",
       "total_chapters":3,
       "number":29
     },
     "AMO": {
-    "book_name": {"english":"Amos"},
+    "book_name": "Amos",
       "section": "OT",
       "total_chapters":9,
       "number": 30
     },
     "OBA": {
-    "book_name": {"english":"Obadiah"},
+    "book_name": "Obadiah",
       "section": "OT",
       "total_chapters":1,
       "number": 31
     },
     "JON": {
-    "book_name": {"english":"Jonah"},
+    "book_name": "Jonah",
       "section": "OT",
       "total_chapters":4,
       "number": 32
     },
     "MIC": {
-    "book_name": {"english":"Micah"},
+    "book_name": "Micah",
       "section": "OT",
       "total_chapters":7,
       "number": 33
     },
     "NAM": {
-    "book_name": {"english":"Nahum "},
+    "book_name": "Nahum",
       "section": "OT",
       "total_chapters":3,
       "number": 34
     },
     "HAB": {
-    "book_name": {"english":"Habakkuk"},
+    "book_name": "Habakkuk",
       "section": "OT",
       "total_chapters":3,
       "number": 35
     },
     "ZEP": {
-    "book_name": {"english":"Zephaniah"},
+    "book_name": "Zephaniah",
       "section": "OT",
       "total_chapters":3,
       "number": 36
     },
     "HAG": {
-    "book_name": {"english":"Haggai"},
+    "book_name": "Haggai",
       "section": "OT",
       "total_chapters":2,
       "number": 37
     },
     "ZEC": {
-    "book_name": {"english":"Zechariah"},
+    "book_name": "Zechariah",
       "section": "OT",
       "total_chapters":14,
       "number": 38
     },
     "MAL": {
-    "book_name": {"english":"Malachi"},
+    "book_name": "Malachi",
       "section": "OT",
       "total_chapters":4,
       "number": 39
     },
     "MAT": {
-    "book_name": {"english":"Matthew"},
+    "book_name": "Matthew",
       "section": "NT",
       "total_chapters":28,
       "number": 40
     },
     "MRK": {
-    "book_name": {"english":"Mark"},
+    "book_name": "Mark",
       "section": "NT",
       "total_chapters":16,
       "number": 41
     },
     "LUK": {
-    "book_name": {"english":"Luke"},
+    "book_name": "Luke",
       "section": "NT",
       "total_chapters":24,
       "number": 42
     },
     "JHN": {
-    "book_name": {"english":"John"},
+    "book_name": "John",
       "section": "NT",
       "total_chapters":21,
       "number": 43
     },
     "ACT": {
-    "book_name": {"english":"Acts"},
+    "book_name": "Acts",
       "section": "NT",
       "total_chapters":28,
       "number": 44
     },
     "ROM": {
-    "book_name": {"english":"Romans"},
+    "book_name": "Romans",
       "section": "NT",
       "total_chapters":16,
       "number": 45
     },
     "1CO": {
-    "book_name": {"english":"1 Corinthians"},
+    "book_name": "1 Corinthians",
       "section": "NT",
       "total_chapters":16,
       "number": 46
     },
     "2CO": {
-    "book_name": {"english":"2 Corinthians"},
+    "book_name": "2 Corinthians",
       "section": "NT",
       "total_chapters":13,
       "number": 47
     },
     "GAL": {
-    "book_name": {"english":"Galatians"},
+    "book_name": "Galatians",
       "section": "NT",
       "total_chapters":6,
       "number": 48
     },
     "EPH": {
-    "book_name": {"english":"Ephesians"},
+    "book_name": "Ephesians",
       "section": "NT",
       "total_chapters":6,
       "number": 49
     },
     "PHP": {
-    "book_name": {"english":"Philippians"},
+    "book_name": "Philippians",
       "section": "NT",
       "total_chapters":4,
       "number": 50
     },
     "COL": {
-    "book_name": {"english":"Colossians"},
+    "book_name": "Colossians",
       "section": "NT",
       "total_chapters":4,
       "number": 51
     },
     "1TH": {
-    "book_name": {"english":"1 Thessalonians"},
+    "book_name": "1 Thessalonians",
       "section": "NT",
       "total_chapters":5,
       "number": 52
     },
     "2TH": {
-    "book_name": {"english":"2 Thessalonians"},
+    "book_name": "2 Thessalonians",
       "section": "NT",
       "total_chapters":3,
       "number": 53
     },
     "1TI": {
-    "book_name": {"english":"1 Timothy"},
+    "book_name": "1 Timothy",
       "section": "NT",
       "total_chapters":6,
       "number": 54
     },
     "2TI": {
-    "book_name": {"english":"2 Timothy"},
+    "book_name": "2 Timothy",
       "section": "NT",
       "total_chapters":4,
       "number": 55
     },
     "TIT": {
-    "book_name": {"english":"Titus"},
+    "book_name": "Titus",
       "section": "NT",
       "total_chapters":3,
       "number": 56
     },
     "PHM": {
-    "book_name": {"english":"Philemon"},
+    "book_name": "Philemon",
       "section": "NT",
       "total_chapters":1,
       "number": 57
     },
     "HEB": {
-    "book_name": {"english":"Hebrews"},
+    "book_name": "Hebrews",
       "section": "NT",
       "total_chapters":13,
       "number": 58
     },
     "JAS": {
-    "book_name": {"english":"James"},
+    "book_name": "James",
       "section": "NT",
       "total_chapters":5,
       "number": 59
     },
     "1PE": {
-    "book_name": {"english":"1 Peter"},
+    "book_name": "1 Peter",
       "section": "NT",
       "total_chapters":5,
       "number": 60
     },
     "2PE": {
-    "book_name": {"english":"2 Peter"},
+    "book_name": "2 Peter",
       "section": "NT",
       "total_chapters":3,
       "number": 61
     },
     "1JN": {
-    "book_name": {"english":"1 John"},
+    "book_name": "1 John",
       "section": "NT",
       "total_chapters":5,
       "number": 62
     },
     "2JN": {
-    "book_name": {"english":"2 John"},
+    "book_name": "2 John",
       "section": "NT",
       "total_chapters":1,
       "number": 63
     },
     "3JN": {
-    "book_name": {"english":"3 John"},
+    "book_name": "3 John",
       "section": "NT",
       "total_chapters":1,
       "number": 64
     },
     "JUD": {
-    "book_name": {"english":"Jude"},
+    "book_name": "Jude",
       "section": "NT",
       "total_chapters":1,
       "number": 65
     },
     "REV": {
-    "book_name": {"english":"Revelation"},
+    "book_name": "Revelation",
       "section": "NT",
       "total_chapters":22,
       "number": 66

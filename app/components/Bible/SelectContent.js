@@ -142,7 +142,7 @@ class SelectContent extends Component {
         </Modal>
         <TouchableOpacity onPress={this.onPressModal} style={this.props.navStyles.touchableStyleRight}>
           <MaterialCommunityIcons
-            name='book-open-variant'
+            name={"book-open-variant"}
             color={Color.White}
             size={26}
           />

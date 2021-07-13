@@ -167,12 +167,13 @@ class VerseView extends Component {
       )
     } else if (typeof verseText != 'undefined') {
       return (
-        <Text style={this.props.styles.textStyle} onPress={() => { this.onPress() }} >
-          <Text>
-            <Text style={this.props.styles.verseNumber}>
+        <Text textBreakStrategy={'simple'} style={this.props.styles.textStyle} onPress={() => { this.onPress() }} >
+          <Text textBreakStrategy={'simple'}>
+            <Text textBreakStrategy={'simple'} style={this.props.styles.verseNumber}>
               {verseNumber}{" "}
             </Text>
             <Text
+              textBreakStrategy={'simple'}
               style={[this.props.styles.textHighlight,
               isSelect && isHighlight ?
                 {
@@ -190,14 +191,14 @@ class VerseView extends Component {
           </Text>
           {
             sectionHeading ?
-              <Text style={this.props.styles.sectionHeading}>
+              <Text textBreakStrategy={'simple'} style={this.props.styles.sectionHeading}>
                 {"\n"} {sectionHeading}
               </Text>
               : null
           }
         </Text>
       )
-    }else{
+    } else {
       return null
     }
 

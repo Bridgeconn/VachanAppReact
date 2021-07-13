@@ -32,7 +32,6 @@ class ReferenceSelection extends Component {
       totalChapters: this.props.navigation.state.params.totalChapters,
       selectedChapterIndex: 0,
       selectedChapterNumber: this.props.navigation.state.params.chapterNumber,
-
       selectedVerseIndex: 0,
       selectedVerseNumber: '',
 

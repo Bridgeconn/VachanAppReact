@@ -13,7 +13,7 @@ class DrawerScreen extends Component {
     this.state = {
       initializing: true,
       user: '',
-      currentVersion:"1.0.0"
+      currentVersion: "1.0.0"
     }
     this.styles = styles(this.props.colorFile, this.props.sizeFile);
   }
@@ -28,7 +28,7 @@ class DrawerScreen extends Component {
         sourceId: this.props.sourceId
       })
     }
-    this.setState({currentVersion})
+    this.setState({ currentVersion })
   }
 
   render() {
@@ -40,6 +40,8 @@ class DrawerScreen extends Component {
       { icon: 'videocam', pressIcon: 'Video', text: 'Video' },
       { icon: 'book', pressIcon: 'Dictionary', text: 'Dictionary' },
       { icon: 'image', pressIcon: 'Infographics', text: 'Infographics' },
+      { icon: 'receipt', pressIcon: 'OBS', text: 'Bible Stories' },
+      { icon: 'event', pressIcon: 'BRP', text: 'Reading Plans' },
       { icon: 'history', pressIcon: 'History', text: 'History' },
       { icon: 'search', pressIcon: 'Search', text: 'Search' },
       { icon: 'settings', pressIcon: 'Settings', text: 'Settings' },
@@ -85,10 +87,10 @@ class DrawerScreen extends Component {
               </TouchableOpacity>
             )
           }
-           {/*for appstore app*/}
-        <Text style={this.styles.versionText}>APP VERSION {this.state.currentVersion}</Text>
-        { /*//for tesing */}
-        {/* <Text style={this.styles.versionText}>APP VERSION 1.2.1-alpha.1</Text> */}
+          {/*for appstore app*/}
+          {/* <Text style={this.styles.versionText}>APP VERSION {this.state.currentVersion}</Text> */}
+          { /*//for tesing */}
+          <Text style={this.styles.versionText}>APP VERSION 1.3.0-alpha.6</Text>
         </ScrollView>
       </View>
     );

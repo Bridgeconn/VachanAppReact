@@ -26,7 +26,6 @@ class ProfilePage extends Component {
  
   logOut = async () => {
     try {
-      console.log(" LOGED IN ",this.props.pasLogedIn,"GOOGLE ",this.props.googleLogIn)
       if (this.props.pasLogedIn){
         firebase.auth().signOut()
       } else if(this.props.googleLogIn){

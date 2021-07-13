@@ -345,7 +345,7 @@ class Bible extends Component {
 
   // fetching chapter content on next or prev icon press
   queryBookFromAPI = async (val) => {
-    this.setState({ isLoading: true, selectedReferenceSet: [], showBottomBar: false, showBottomBar: false, currentVisibleChapter: val != null ? parseInt(this.state.currentVisibleChapter) + val : this.props.chapterNumber, error: null }, async () => {
+    this.setState({ isLoading: true, selectedReferenceSet: [],showColorGrid:false, showBottomBar: false, showBottomBar: false, currentVisibleChapter: val != null ? parseInt(this.state.currentVisibleChapter) + val : this.props.chapterNumber, error: null }, async () => {
       try {
         if (this.props.downloaded) {
           if (this.state.downloadedBook.length > 0) {

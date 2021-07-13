@@ -27,6 +27,7 @@
     "react-native-google-signin": "^2.1.1",
     "react-native-loading-spinner-overlay": "^1.0.1",
     "react-native-modal": "^11.3.1",
+    "react-native-modal-dropdown": "git+https://github.com/siemiatj/react-native-modal-dropdown.git",
     "react-native-popup-menu": "^0.9.1",
     "react-native-progress": "^3.6.0",
     "react-native-reanimated": "^1.7.0",

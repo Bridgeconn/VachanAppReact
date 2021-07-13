@@ -36,7 +36,10 @@ class Help extends Component {
         { icon: 'settings', pressIcon: 'Settings', hint: 'Manage app settings', visible: false },
         { icon: 'book', pressIcon: 'Book', hint: 'Checkout Dictionary', visible: false },
         { icon: 'info', pressIcon: 'About', hint: 'Information about application', visible: false },
-        { icon: 'book-open-variant', pressIcon: 'Multi-Content', hint: 'Dropdown with multiple content', visible: false },
+        { icon: 'book-open-variant', pressIcon: 'Multi-Content', hint: 'View content parallelly', visible: false },
+        { icon: 'receipt', pressIcon: 'Bible-Stories', hint: 'Read Bible stories', visible: false },
+        { icon: 'event', pressIcon: 'Reading-Plans', hint: 'Access Reading Plan', visible: false },
+
       ],
     }
     this.showHints = this.showHints.bind(this)
@@ -71,7 +74,7 @@ class Help extends Component {
       transform: [{ scale: this.animatedValue }]
     }
     return (
-      <View style={{ flexDirection: 'row', justifyContent: 'center',  }}>
+      <View style={{ flexDirection: 'row', justifyContent: 'center', }}>
         <TouchableWithoutFeedback
           style={{
             width: width / 5,
@@ -80,7 +83,7 @@ class Help extends Component {
           onPressIn={() => this.handlePressIn(index)}
           onPressOut={() => this.handlePressOut()}
         >
-          <Animated.View style={[this.styleFile.AnimatedViewCustom,{alignItems: 'center'}, this.props.doAnimate == true && index == this.state.index ? animatedStyle : null]}>
+          <Animated.View style={[this.styleFile.AnimatedViewCustom, { alignItems: 'center' }, this.props.doAnimate == true && index == this.state.index ? animatedStyle : null]}>
 
             {item.icon == 'book-open-variant' ? <MaterialCommunityIcons
               name={item.icon} size={constantFont.iconLarge}
@@ -92,7 +95,7 @@ class Help extends Component {
             }
           </Animated.View>
         </TouchableWithoutFeedback>
-        <View style={[this.styleFile.textView,{alignItems: 'flex-start'}]}>
+        <View style={[this.styleFile.textView, { alignItems: 'flex-start' }]}>
           <View style={this.styleFile.textRow}>
             <Text style={this.styleFile.textStyle}>{item.visible ? item.hint : null}</Text>
           </View>

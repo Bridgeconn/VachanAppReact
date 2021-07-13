@@ -13,6 +13,7 @@ import { SelectBookPageStyle } from './styles.js';
 import { connect } from 'react-redux'
 import Spinner from 'react-native-loading-spinner-overlay';
 import Color from '../../../utils/colorConstants'
+import { color } from 'react-native-reanimated';
 const width = Dimensions.get('window').width;
 
 //OT- old-testment
@@ -92,25 +93,36 @@ class SelectBook extends Component {
   componentDidMount() {
     this.getOTSize()
     this.getNTSize()
-    // this.checkForNotAvailableBook()
+    this.selectTab()
   }
-//   checkForNotAvailableBook() {
-//     let found = false
-//     for (var i = 0; i < this.props.books.length; i++) {
-//       if (this.props.books[i].bookId == this.props.screenProps.selectedBookId) {
-//         found = true
-//         break;
-//       }
-//     }
-//     if (!found) {
-//       Alert.alert("Please Select the book ", "The book you were reading is not available in this version", [{ text: 'OK', onPress: () => { return } }]);
-//   }
-// }
-  componentDidUpdate(prevProps, prevState) {
+  selectTab(){
+    let bookData = null
+    let bookIndex = -1
+    if (this.props.books.length > 0) {
+      for (var i = 0; i < this.props.books.length; i++) {
+        if(this.props.books[i].bookId == this.props.screenProps.selectedBookId){
+          bookData = this.props.books[i]
+          bookIndex = i
+        }
+      }
+      if(bookData && bookIndex != -1){
+        if (bookData.bookNumber >= 40) {
+          this.setState({ activeTab: false })
+        } else {
+          this.setState({ activeTab: true })
+        }
+        let wait = new Promise((resolve) => setTimeout(resolve, 500)); 
+        wait.then( () => {
+        this.flatlistRef.scrollToIndex({ index: bookIndex, viewPosition: 0, animated: false, viewOffset: 0 })
+        });
+      }
+    }
+  }
+  componentDidUpdate(prevProps) {
     if (prevProps.books !== this.props.books) {
       this.getOTSize()
       this.getNTSize()
-      // this.checkForNotAvailableBook()
+      this.selectTab()
     }
   }
   renderItem = ({ item, index }) => {
@@ -121,7 +133,9 @@ class SelectBook extends Component {
           style={this.styles.bookList}>
           <Text
             style={[this.styles.textStyle,
-            { fontWeight: item.bookId == this.props.screenProps.selectedBookId ? "bold" : "normal" }
+            { fontWeight: item.bookId == this.props.screenProps.selectedBookId ? "bold" : "normal",
+            color: item.bookId == this.props.screenProps.selectedBookId ?  this.props.colorFile.blueText : this.props.colorFile.textColor
+           }
             ]}
           >
             {item.bookName}
@@ -182,7 +196,6 @@ class SelectBook extends Component {
                   : null}
               {
                 this.state.NTSize > 0
-
                   ?
                   <Button
                     active={!this.state.activeTab}
@@ -214,11 +227,11 @@ class SelectBook extends Component {
               onViewableItemsChanged={this.onViewableItemsChanged}
               viewabilityConfig={this.viewabilityConfig}
               contentContainerStyle={{ paddingBottom: 60 }}
-              ListFooterComponent={<View style={{marginBottom:84}}/>}
+              ListFooterComponent={<View style={{ marginBottom: 84 }} />}
             />
           </View>
         }
-        {(this.props.books && this.props.books.length > 0) && <Icon name="check-circle" color='rgba(62, 64, 149, 0.8)' onPress={() => this.props.screenProps.updateSelectedChapter(null, null)} size={64} style={{ position: 'absolute', bottom: 0, right: 0, paddingRight: 20,paddingBottom:10}} />}
+        {/* {(this.props.books && this.props.books.length > 0) && <Icon name="check-circle" color='rgba(62, 64, 149, 0.8)' onPress={() => this.props.screenProps.updateSelectedChapter(null, null)} size={64} style={{ position: 'absolute', bottom: 0, right: 0, paddingRight: 20,paddingBottom:10}} />} */}
       </View>
     );
   }

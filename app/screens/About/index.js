@@ -39,10 +39,20 @@ class About extends Component {
               <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>{'\n'}Content and Technology Partners{'\n'}</Text>
               VachanGo is being made available under a collaborative arrangement of Friends of Agape, unfoldingWord, Wycliffe Associates, Crossway, Bridgeway Publications, Dusty Sandals, BibleProject, Visual Unit, and is brought to you by Bridge Connectivity Solutions Pvt. Ltd. (BCS) <Text style={this.styles.linkText} onPress={() => { Linking.openURL('https://www.bridgeconn.com') }}>(https://www.bridgeconn.com)</Text> who is the localization and technology partner.{'\n'}
 
-              <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>{'\n'}Release Notes (2/06/2021) v1.2.1</Text>
+              <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>{'\n'}Release Notes (13/07/2021) v1.3.0</Text>
+              <Text textBreakStrategy={'simple'} style={this.styles.rlsNoteTitleText}>{'\n'}Content Additions (using Vachan API’s):{'\n'}</Text>
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Bibles: Dogri DSV{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Audio Bible: Oriya IRV NT, Dogri DSV{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.rlsNoteTitleText}>{'\n'}Feature Additions:{'\n'}</Text>
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Bible Stories in various languages{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>M’Cheyne Bible Reading Plan{'\n'}
               <Text textBreakStrategy={'simple'} style={this.styles.rlsNoteTitleText}>{'\n'}Bug Fixes:{'\n'}</Text>
-              <Text textBreakStrategy={'simple'} style={[this.styles.bulletIcon,{...padding}]}>{'\u2022' + " "}</Text>Fixed logout issue on state change{'\n'}
-              <Text textBreakStrategy={'simple'} style={[this.styles.bulletIcon,{...padding}]}>{'\u2022' + " "}</Text>Fixed created notes icon visibility issue {'\n'}
+              <Text textBreakStrategy={'simple'} style={[this.styles.bulletIcon,{...padding}]}>{'\u2022' + " "}</Text>Enhanced navigation icon{'\n'}
+              <Text textBreakStrategy={'simple'} style={[this.styles.bulletIcon,{...padding}]}>{'\u2022' + " "}</Text>Colour tray has been hidden when not in use{'\n'}
+
+              <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>{'\n'}Release Notes (30/05/2021) v1.2.1</Text>
+              <Text textBreakStrategy={'simple'} style={this.styles.rlsNoteTitleText}>{'\n'}Bug Fixes:{'\n'}</Text>
+              <Text textBreakStrategy={'simple'} style={[this.styles.bulletIcon,{...padding}]}>{'\u2022' + " "}</Text>Fixed Google Sync and logout issue on state change{'\n'}
 
               <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>{'\n'}Release Notes (28/05/2021) v1.2.0</Text>
               <Text textBreakStrategy={'simple'} style={this.styles.rlsNoteTitleText}>{'\n'}Content Additions (Using Vachan API’s):{'\n'}</Text>

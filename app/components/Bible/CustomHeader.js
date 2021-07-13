@@ -14,6 +14,9 @@ export default class CustomHeader extends Component {
     super(props)
   }
   render() {
+    // console.log("book name ",this.props.bookName)
+    
+    let bookName = !isNaN(this.props.bookName.charAt(0)) ? ( this.props.bookName.charAt(0).toUpperCase() + this.props.bookName.slice(1)) : this.props.bookName
     const navbarTranslate = this.props.clampedScroll.interpolate({
       inputRange: [0, NAVBAR_HEIGHT],
       outputRange: [0, -NAVBAR_HEIGHT],
@@ -97,7 +100,7 @@ export default class CustomHeader extends Component {
         </View>
         <Animated.View style={[navStyles.title]}>
           <TouchableOpacity  style={navStyles.titleTouchable}  onPress={this.props.navigateToSelectionTab}>
-            <Text style={{ fontSize: 18,color:'#fff' }}>{this.props.bookName.length > 16 ? this.props.bookName.slice(0, 15) + "..." : this.props.bookName} {this.props.chapterNumber}</Text>
+            <Text style={{ fontSize: 18,color:'#fff' }}>{bookName.length > 16 ? bookName.slice(0, 15) + "..." : bookName} {this.props.chapterNumber}</Text>
             <Icon name="arrow-drop-down" color={Color.White} size={20} />
           </TouchableOpacity>
           <TouchableOpacity   style={[navStyles.titleTouchable]} onPress={this.props.navigateToLanguage}>

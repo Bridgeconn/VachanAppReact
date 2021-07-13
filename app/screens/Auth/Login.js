@@ -198,8 +198,8 @@ class Login extends Component {
             </View>
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', marginVertical: 32 }}>
               <GoogleSigninButton
-                style={{ width: 68, height: 68 }}
-                size={GoogleSigninButton.Size.Icon}
+                // style={{ width: 68, height: 68 }}
+                size={GoogleSigninButton.Size.Wide}
                 color={GoogleSigninButton.Color.Dark}
                 onPress={this._signInGoogle}
               />
